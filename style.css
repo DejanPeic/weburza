@@ -1,0 +1,663 @@
+/*
+ * 1.0 Reset
+ * =reset default browser css. based on work by eric meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+ * ----------------------------------------------------------------------------
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+fieldset {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin: auto;
+	width: 100%;
+}
+
+/* html5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+button {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+input {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}/*Reset end*/
+
+
+
+
+/*Let's do this*/
+
+body {
+	background: #efefef;
+	color: #727272;
+	font-family: Arial, Helvetica, Georgia, sans-serif;
+	font-size: 62.5%;
+	font-weight: 400;
+	line-height: 1;
+}
+
+.wrapper{
+	font-size: 1.6em;
+}
+
+textarea{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	padding-top: 1em;
+	color: #727272;
+}
+
+input[type="text"]{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	height: 3em;
+	color: #727272;
+}
+
+.form-wrapper{
+	margin: auto;
+	max-width: 40em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-bottom: 4em;
+	z-index: 100;
+	position: relative;
+}
+
+.inputs{
+	color: #fff;
+	padding: 1em 0 1em 0;
+	display: block;
+}
+
+.join-us{
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	font-size: 3em;
+	top: 14%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 101;
+	text-align: center;
+}
+
+.jsinfo,.phpinfo{
+	width: 100%;
+	text-align: center;
+}
+
+.jsinfo p{
+	margin-bottom: 0.6em;
+	text-transform: uppercase;
+	font-weight:bold;
+	color: #000;
+}
+
+.jsinfo{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #ffec26;
+	padding: 1em;
+}
+
+.check{
+	display: none;
+}
+
+.phpinfo{
+	margin-top: 10em;
+	margin: auto;
+}
+
+.jslastname,.jsname,.jsemail,.jsinvalidemail{
+	padding-bottom: 0.2em;
+}
+
+.button{
+	width: 100%;
+	display: block;
+	background-color:#ffec26;
+	border: 1px solid #ffec26;
+	height: 3em;
+	margin-top: 2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+textarea:focus,input[type="text"]:focus{
+	border-color: #ffec26;
+	box-shadow:0 0 3px #ffec26;
+	-webkit-transition: box-shadow linear 1s, border 1s ease-out;
+	-moz-transition: box-shadow linear 1s, border 1s ease-out;
+	-o-transition: box-shadow linear 1s, border 1s ease-out;
+	transition: box-shadow linear 1s, border 1s ease-out;
+}
+
+.button:hover{
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #000;
+}
+
+.jslastname,.jsemail,.jsinvalidemail,.jsname{
+	color: #ff0000;
+	font-weight: bold;
+	display: none;
+}
+
+/*Sections*/
+.section1{
+	width: 100%;
+	padding-bottom: 4%;
+	background-image: url(images/comp.png);	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 60%;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	min-height: 2em;/*Fix for JS to aviod the flickerng when nav is fixed */
+}
+
+.section1 .web-burza{
+	font-size: 3em;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	z-index: 1000;
+	padding-top: 1em;
+} 
+
+.section1 .button{	
+	z-index: 1000;
+	position: relative;
+	max-width: 16em;
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+.section1 .web-burza .js{
+	height: 1em;
+	display: inline-block;
+	position: relative;
+	top: 0.2em;
+}
+
+.section1 .web-burza .js-secondary{
+	height: 2em;
+	display: inline-block;
+	position: relative;
+	top: 0.7em;
+}
+
+.section1 .web-burza .school{
+	font-family: 'Barlow', sans-serif;
+	font-weight: 100;
+}
+
+.section1 .web-burza .secondary-school{
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+}
+
+.secondary-logo-container{
+	max-width: 40em;
+	position: relative; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+.secondary-logo-container p{
+	color: #fff;
+	z-index: 1000;
+	margin-top: 4em;
+	line-height: 1.4em;
+	position: relative;
+	text-align: center;
+	padding: 0 1em 0 1em;
+}
+
+.section1:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.8;
+
+	background: transparent;
+	background: linear-gradient(500deg, #41388e, #96e0cf);
+	background-size: 150% 150%;
+	
+	-webkit-animation: AnimateHero 15s ease infinite;
+	-moz-animation: AnimateHero 15s ease infinite;
+	-o-animation: AnimateHero 15s ease infinite;
+	animation: AnimateHero 15s ease infinite;
+}/*First section END*/
+
+.section2{
+	padding-bottom: 6em;
+	width: 100%;
+	position: relative;
+	z-index: 100;
+	background-image: url(images/computer.png);	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	color:#fff;
+	overflow: hidden;
+}
+
+.section2 .developer{
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+	padding-top: 3em;
+	position: relative;
+	font-size: 3em;
+}
+
+.section2 ul li img{
+	margin: 0 1.6em 0 2em;
+	float: left;
+	border-radius: 50px;
+}
+
+.section2 ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.section2 ul li{
+	float: left;
+	margin-top: 3em;
+}
+
+.section2 ul li h1 {
+	margin-bottom: 1em;
+}
+
+.section2 ul li p {
+	line-height: 1.4;
+	padding: 0 0.2em 0 0.2em; 
+}
+
+.section2:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: transparent;
+	background: linear-gradient(500deg, #555183, #468277);
+	background-size: 100% 100%;
+	opacity: .7; 
+  }
+
+.section-secondthalf{
+	float: left;
+	width: 50%;
+	top: 3em;
+	position: relative;
+}
+
+.section-firsthalf{
+	float: left;
+	width: 50%;
+	top: 3em;
+	position: relative;
+}/*Second section END*/
+
+
+.section3{
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+
+.section3:after {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background:	transparent;
+	background: linear-gradient(500deg, #7e74f4,#B8EBE2);
+	background-size: 100% 100%;
+	opacity: 0.7; 	
+}/*Third section END*/
+
+.honey{
+	opacity: 0.5;
+}
+
+.honey-container{
+	position: relative;
+	z-index: 100;
+	overflow: hidden;
+	margin: auto;
+	max-width: 42em;
+	padding-top: 2em;
+}
+
+.honey.left{
+	float: left;
+	width: 30%;
+	
+}
+
+.honey.right{
+	float: right;
+	width: 30%;
+} 
+
+@-webkit-keyframes AnimateHero {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimateHero {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimateHero {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimateHero {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+
+
+/*
+ * Menu (header navigation)
+ * ----------------------------------------------------------------------------
+ */
+
+
+.fixed{
+	position: fixed;
+	top: 0;
+} 
+ 
+nav{
+	position: absolute;
+	width: 100%;
+	background-color: #000;
+}
+ 
+
+.nav{
+	height: 3em;
+	background-color: #000;
+	width: 100%;
+	display: block;
+    -webkit-transform: translateZ(0);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translateZ(0);
+	transform: translate3d(0,0,0);
+}
+ 
+.nav:before,/* Small clearfix */
+.nav:after {
+	content: "";
+	display: table;
+}
+
+.nav-menu {
+	position: absolute;
+	background-color: #000;
+	z-index: 105;
+	display: block;
+	height: 3em;
+	width: 100%;
+}
+
+.nav:after {
+	clear: both;
+}
+
+.nav ul {
+	background-color: transparent;
+	list-style: none;
+	margin-bottom: auto;
+	margin-top: auto;
+	padding: 0;
+}
+
+.nav li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 33.33%;
+}
+
+.nav ul a {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	font-size: 1.6em;
+	line-height: 1.875em;
+	height: 1.875em;
+	font-weight:bold;
+	
+	-webkit-transition: all linear 0.3s;
+	-moz-transition:  all linear 0.3s;
+	-o-transition:  all linear 0.3s;
+	transition:  all linear 0.3s;
+}
+
+.nav ul a:hover{
+	background-color: #ffec26;
+	color: #000;
+}
+
+.footer{
+	height: 26em;
+	background: #000;
+	position: relative;
+}
+
+.dots{
+	height: 10em;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 3em;
+}
+
+.burza-footer{
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	font-size: 4em;
+	margin-top: 0.2em;
+}
+
+.burza-footer-secondary{
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 3em;
+	color: #fff;
+	margin-top: 0.2em;
+}
+
+.burza-copy{
+	font-family: 'Barlow', sans-serif;
+	text-align: center;
+	font-weight: 100;
+	font-size: 2em;
+	color: #fff;
+	margin-top: 0.4em;
+}
+
+
+@media only screen and (max-width: 1000px){
+	
+	.section-secondthalf{
+		float: none;
+		width: 100%;
+	}
+	.section-firsthalf{
+		float:none;
+		width: 100%;
+	}
+}
+
+
+@media only screen and (max-width: 800px) {
+	
+	.section1 .web-burza{
+		padding-top: 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.section1 .web-burza{
+		font-size: 2em;
+	}
+	.secondary-logo-container p{
+		margin-top: 2em;
+	}
+}
+
+@media only screen and (max-width: 600px){
+.section2 ul li img{
+		width: 100px;
+		display: block;
+		margin: 0;
+		margin: auto;
+		float: none;
+	}
+	
+	.section2 .developer{
+		padding-top: 2em;
+	}
+	.section2 ul li h1{
+		text-align: center;
+		margin-top: 1em;
+	}
+	
+	.section2 ul li{
+		margin-top: 2em;
+	}
+	
+	.section2 ul li p{
+		text-align: center;
+		padding-left: 0.4em;
+		padding-right: 0.4em;
+	}
+	
+	.join-us{
+		font-size: 2.4em;
+		top: 10%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.section1 .web-burza{
+		font-size: 1.6em;
+	}
+	
+	.join-us{
+		font-size: 2em;
+		top: 8%;
+	}
+	
+}
