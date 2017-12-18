@@ -225,7 +225,7 @@ textarea:focus,input[type="text"]:focus{
 /*Sections*/
 .section1{
 	width: 100%;
-	padding-bottom: 4%;
+	padding-bottom: 2em;
 	background-image: url(images/comp.png);	
 	background-size: cover;
 	background-repeat: no-repeat;
