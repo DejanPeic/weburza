@@ -164,6 +164,9 @@ input[type="text"]{
 }
 
 .jsinfo{
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+	display: none;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
