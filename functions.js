@@ -1,6 +1,6 @@
 $(document).ready(function(){
  'use strict';
-
+var resizeId;
     (function () {
 
         var myForm = $('.contact-form'),
@@ -110,10 +110,13 @@ $window.on('scroll', function () {
    
 });
 	$window.on('resize', function () {
+		clearTimeout(resizeId);
+		resizeId = setTimeout(function () { 
 		//Remove the sticky so we can calculate position again... 
 		nav.removeClass('fixed');
 		//Update the offset again (DUH!!)
 		offset = nav.offset();
+		 }, 100);
 		});
 	
 });
